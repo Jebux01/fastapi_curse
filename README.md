@@ -17,6 +17,7 @@ proyectos utilizados:
 - [FastAPI] - utilizada para el consumo de datos
 - [Pydantic] - Manejo de Modelos
 - [SQLAlchemy] - Serializacion, Modelos y ORM
+- [Uvicorn] - servidor "ASGI" ultrarrápido.
 
 ## Preparacion de trabajo
 Esto asegurará que el código sea linter antes de que termine en la canalización; de lo contrario, la canalización se rechazará automáticamente si se encuentra algún error.
@@ -52,7 +53,7 @@ Esto descargará todas las dependencias necesarias para ejecutar el proyecto, na
 pip3 install virtualenv
 virtualenv cc_env
 source cc_env/bin/activate
-deactivate
+python main.py
 ```
 
 # Linux ubuntu/debian
@@ -61,7 +62,7 @@ cd proyecto
 pip3 install virtualenv
 virtualenv cc_env
 source cc_env/bin/activate
-deactivate
+python3 main.py
 ```
 
 ## License
